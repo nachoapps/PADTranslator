@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignBounds"
+    style="@android:style/ThemeOverlay.Material.Dark"
+    android:background="@android:color/black"
+    android:columnCount="2"
+    android:columnOrderPreserved="false"
+    android:useDefaultMargins="true">
+
+    <TextView
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/monster_name_text"
+        android:layout_gravity="fill_horizontal"
+        android:layout_width="0dp"
+        android:minHeight="40dp"
+        android:text="vegito" />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:text="Leader Skill:" />
+
+    <TextView
+        android:id="@+id/leader_skill_text"
+        android:layout_gravity="fill_horizontal"
+        android:layout_width="0dp"
+        android:minHeight="40dp"
+        android:singleLine="false"
+        android:text="my leader skill is this thing wra pwra pwr apw rapwr ap wrap" />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:text="Active Skill:" />
+
+    <TextView
+        android:id="@+id/active_skill_text"
+        android:layout_gravity="fill_horizontal"
+        android:layout_width="0dp"
+        android:minHeight="40dp"
+        android:singleLine="false"
+        android:text="my leader skill is this thing" />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:text="Alt Skill:" />
+
+    <TextView
+        android:id="@+id/alt_skill_text"
+        android:layout_width="0dp"
+        android:layout_gravity="fill_horizontal"
+        android:minHeight="40dp"
+        android:singleLine="false"
+        android:text="my alt skill is this thing" />
+
+</GridLayout>

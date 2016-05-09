@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.nacho.padtranslate.ui"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".MainApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".WindowService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.nacho.padtranslate.monsterinfo.MonsterInfoDisplayService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.nacho.padtranslate.fulltranslate.FullTranslateDisplayService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <activity android:name=".SettingsActivity">
+        </activity>
+        <activity android:name=".HelpActivity">
+        </activity>
+        <activity android:name=".AboutActivity">
+        </activity>
+    </application>
+
+</manifest>

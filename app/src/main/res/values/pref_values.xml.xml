@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_translate_monster_key">translate_monster_preference</string>
+    <string name="pref_translate_dungeon_key">translate_dungeon_preference</string>
+    <string name="pref_translate_menu_key">translate_menu_preference</string>
+    <string name="pref_take_screenshot_key">take_screenshot_preference</string>
+    <string name="pref_send_diagnostics_key">send_diagnostics_preference</string>
+    <string name="pref_buttons_alt_key">buttons_alt_preference</string>
+    <string name="pref_legacy_screenshot_key">legacy_screenshot_preference</string>
+</resources>

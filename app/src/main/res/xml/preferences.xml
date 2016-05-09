@@ -1,0 +1,54 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Action Buttons">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_translate_monster_key"
+            android:title="Monster Info"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_translate_dungeon_key"
+            android:title="Translate Dungeon"/>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:enabled="false"
+            android:key="@string/pref_translate_menu_key"
+            android:title="Translate Menus"/>
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/canDynamicScreenshot"
+            android:enabled="@bool/canDynamicScreenshot"
+            android:key="@string/pref_take_screenshot_key"
+            android:title="Take Screenshot"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Other Options">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_send_diagnostics_key"
+            android:summary="Automatically populate an email which sends diagnostic info to the developer."
+            android:title="Send Diagnostics"
+            />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_buttons_alt_key"
+            android:summary="Show buttons on the right."
+            android:title="Switch Side"
+            />
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/requiresLegacyScreenshot"
+            android:enabled="@bool/canDynamicScreenshot"
+            android:key="@string/pref_legacy_screenshot_key"
+            android:summary="Pre-Lollipop devices require a manual screenshot. Enable to force this behavior on newer devices."
+            android:title="Manual Screenshot"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>
